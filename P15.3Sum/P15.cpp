@@ -31,6 +31,9 @@ public:
 
 				int need = -1 * (it1->first + it2->first);
 
+				if(need < it2->first)
+					continue;
+
 				if (appearCount.find(need) != appearCount.end()) {
 					if (need == it1->first || need == it2->first) {
 						if (appearCount[need] < 2)
@@ -45,9 +48,9 @@ public:
 					tmp.push_back(it1->first);
 					tmp.push_back(it2->first);
 					tmp.push_back(need);
-					if (canPush(ret, tmp)) {
-						ret.push_back(tmp);
-					}
+					
+					ret.push_back(tmp);
+					
 				}
 			}
 		}
