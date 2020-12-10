@@ -1,0 +1,12 @@
+#include <iostream>
+#include <string>
+#include <vector>
+
+int main()
+{
+	Solution solution;
+	
+	getchar();
+	getchar();
+	return 0;
+}
