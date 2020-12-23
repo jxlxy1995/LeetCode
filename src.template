@@ -2,11 +2,11 @@
 #include <string>
 #include <vector>
 
+using namespace std;
+
 int main()
 {
 	Solution solution;
 	
-	getchar();
-	getchar();
 	return 0;
 }
