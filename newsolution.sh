@@ -17,6 +17,9 @@ mkdir $dir
 
 cp src.template $dir/$1.cpp
 touch $dir/README.md
+touch $dir/Makefile
+echo $1": "$1".cpp">>$dir/Makefile
+echo -e "\tg++ -g -o "$1" "$1".cpp">>$dir/Makefile
 
 echo "----------create "$dir" success!----------"
 
